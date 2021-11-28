@@ -1,0 +1,31 @@
+1. It is unclear to me what the velocity reference frame is.
+
+I added a paragraph in section 3 to discuss the velocity reference frame, and 
+how the velocity was calculated. I also discussed the reason for choosing the
+heliocentric velocity. 
+
+2. I think throwing out the very close objects isn't warranted here.  
+    With peculiar velocities of ~600 km/s much of your sample has similar (if not larger) problems.  
+    What you're finding, I think, is that there are large scale flows for structures larger/farther away than the local group.  
+    And there are. 
+
+
+
+
+3. It is good to look at outliers.  
+    In big catalogs outliers are often objects with bad measurements.  
+    You do need to check, of course, as real outliers may be of special physical interest.
+
+
+
+4. There are many small errors and typos (e.g., "comic" instead of "cosmic").
+
+Thank you for your feedback. This has been addressed. I also used spell-checking tool
+to ensure small typos should have been fixed. 
+
+5. Your uncertainty seems very small given the data set.  
+    You might try other ways of estimating the uncertainty.
+
+6. Your fitting algorithm is not clear.  
+    There are several OLS fitting algorithms.
+
