@@ -21,7 +21,7 @@ and uncertainty section as well.
 I agree with you that these TRGBs with high peculiar velocity are very likely due to 
 the large scale flow, such as in some filaments or near some gravitational anomaly. 
 Since Hubble's law describes the isotropic and homogenous expansion of universe. It is 
-safe to remove these anomalies in small scale (within a range of 0.6 Mpc). 5 out of 199
+safe to remove these anomalies in small scale (within a range of 0.6 Mpc). 6 out of 199
 points have been removed, which should not have a significant impact on the final result. 
 
 
@@ -33,9 +33,17 @@ to ensure small typos should have been fixed.
 5. Your uncertainty seems very small given the data set.  
     You might try other ways of estimating the uncertainty.
 
-high y scattering and fitting issue. tried to address this with 2D fitting, the result 
-looks in the figure.
+Instead of curve_fit provided by scipy, I used chi-square fitting and Hyperfit. These two 
+methods both took uncertainty of data into account. Even though the uncertainty of the Hubble constant
+derived from the fit line is still very small, I think it is very likely due to the intrinsic data 
+scattering of the sample. Hyperfit algorithm gives a very small log-likelihood, meaning the 
+parameters of the fitting line are not very reliable. However, in terms of methodology, 
+the two fitting methods have been discussed and justified in the paper.
 
 6. Your fitting algorithm is not clear.  
     There are several OLS fitting algorithms.
+
+I have specified objective function for both fitting methods I used in the paper. I
+also explained the parameters used in the objective function. I hope this addition
+can clarify the fitting algorithms I used. 
 
